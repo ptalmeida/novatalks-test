@@ -1,0 +1,71 @@
+{
+  "SEO": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Unique ID",
+        "placeholder": "Type an SEO-friendly identifier..."
+      }
+    },
+    "meta_title": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Title",
+        "placeholder": "Meta title..."
+      }
+    },
+    "meta_description": {
+      "type": "Text",
+      "config": {
+        "label": "Meta Description",
+        "placeholder": "Meta Description..."
+      }
+    },
+    "canonical": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["brewery", "country"],
+        "label": "Canonical URL",
+        "placeholder": "Select the category to use in the canonical URL"
+      }
+    }
+  },
+  "Main": {
+    "headline": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Headline",
+        "placeholder": "Main title..."
+      }
+    },
+    "h2": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "heading2",
+        "label": "Description",
+        "placeholder": "h2"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 140,
+          "height": 140
+        },
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "page_body": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "label": "Page body",
+        "placeholder": "Content of the page"
+      }
+    }
+  }
+}
